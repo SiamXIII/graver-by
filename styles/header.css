@@ -1,0 +1,72 @@
+﻿#mainHeader {
+	background-color: ghostwhite;
+}
+
+	#mainHeader a {
+		text-decoration: none;
+		color: black;
+	}
+
+		#mainHeader a:hover {
+		}
+
+	#mainHeader > ul {
+		height: 100%;
+	}
+
+		#mainHeader > ul > li {
+			float: left;
+			list-style-type: none;
+			position: relative;
+			top: 0;
+		}
+
+	#mainHeader .logo-container {
+		width: 40%;
+	}
+
+	#mainHeader .phone-container,
+	#mainHeader .auth-container {
+		width: 15%;
+	}
+
+	#mainHeader > ul > li > ul {
+		list-style-type: none;
+		font-size: 14px;
+	}
+
+		#mainHeader > ul > li > ul > li {
+			margin: 5px 0;
+		}
+
+	#mainHeader > ul > li > .phones .phone {
+	}
+
+		#mainHeader > ul > li > .phones .phone:before {
+			content: "";
+			background-size: contain;
+			padding-left: 20px;
+		}
+
+		#mainHeader > ul > li > .phones .phone.velcom:before {
+			background: url('../images/velcom-logo.png') no-repeat;
+		}
+
+		#mainHeader > ul > li > .phones .phone.mts:before {
+			background: url('../images/mts-logo.png') no-repeat;
+		}
+
+		#mainHeader > ul > li > .phones .phone.home:before {
+			background: url('../images/home-logo.png') no-repeat;
+		}
+
+		#mainHeader > ul > li > .phones .phone.skype:before {
+			background: url('../images/skype-logo.png') no-repeat;
+		}
+
+	#mainHeader .auth-container {
+		padding-left: 40px;
+		background: url('../images/login-ico.png') 0 7px no-repeat;
+		background-size: auto;
+		box-sizing: border-box;
+	}
