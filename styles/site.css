@@ -17,11 +17,10 @@ body {
 
 .main-wrapper {
 	position: relative;
-	background: azure;
 	width: 1200px;
-	min-height: 300px;
 	margin: 0 auto;
 }
 
-#mainHeader {
+.logo-wrapper {
+	background-image: url('../images/logo.png');
 }

@@ -70,3 +70,63 @@
 		background-size: auto;
 		box-sizing: border-box;
 	}
+
+.nav-wrapper {
+	background-color: black;
+}
+
+.navbar {
+	height: 44px;
+	padding-left: 20px;
+}
+
+	.navbar a {
+		text-decoration: none;
+		color: white;
+		margin: 12px 10px;
+		display: inline-block;
+	}
+
+		.navbar a:hover {
+			color: #0093dd;
+		}
+
+.search-box {
+	float: right;
+	background: white;
+	margin-top: 8px;
+	border: 1px inset;
+	margin-right: 20px;
+	position: relative;
+}
+
+	.search-box input[type="search"] {
+		height: 22px;
+		margin-right: 20px;
+		width: 300px;
+		background: white url('../images/search.png') 3px 3px no-repeat;
+		padding-left: 25px;
+		border: none;
+	}
+
+		.search-box input[type="search"]:focus {
+			outline-width: 0;
+		}
+
+	.search-box .search-button {
+		background-color: black;
+		height: 24px;
+		width: 64px;
+		float: right;
+		text-align: center;
+		color: white;
+		cursor: pointer;
+	}
+
+		.search-box .search-button > div {
+			margin-top: 2px;
+		}
+
+		.search-box .search-button:hover {
+			box-shadow: rgba(0,0,0,0.5) 3px 3px inset;
+		}
