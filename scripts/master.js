@@ -64,6 +64,23 @@
 
     $('.partner').click(function () {
         window.location = this.attributes["href"].value;
-    })
+    });
+
+    $('.catalog li').click(function toggleCatalog(event) {
+        $(this).siblings().children('.submenu').css('display', 'none');
+
+        if ($(this).children('.submenu').css('display') == 'none') {
+            $(this).children('.submenu').css('display', 'block');
+        }
+        else {
+            $(this).children('.submenu').css('display', 'none');
+        }
+    });
+
+    $('.catalog li').mouseenter(function toggleCatalog(event) {
+        $(this).siblings().children('.submenu').css('display', 'none');
+
+        $(this).children('.submenu').css('display', 'block');
+    });
 })
 

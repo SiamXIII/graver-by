@@ -27,6 +27,7 @@ ul.catalog > li {
 
 .catalog > li:hover {
     background: linear-gradient(rgba(104,205,255,1) 80%,rgba(41,159,217,1));
+    cursor: pointer;
 }
 
 .catalog > li > img {
@@ -72,10 +73,10 @@ ul.catalog > li {
     left: 245px;
 }
 
-.catalog > li:hover > .submenu,
+/*.catalog > li:hover > .submenu,
 .catalog > li > .submenu:hover {
     display: block;
-}
+}*/
 
 .catalog > li > .submenu > li {
     display: flex;

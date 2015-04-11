@@ -10,13 +10,11 @@
 }
 
 .pre-footer {
-    background-color: red;
     right: 100%;
     background: linear-gradient(to left, #fdfdfd, transparent);
 }
 
 .post-footer {
-    background-color: red;
     left: 100%;
      background: linear-gradient(to right, #fdfdfd, transparent);
 }
