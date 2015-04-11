@@ -1,4 +1,32 @@
 ﻿@import url('header.css');
 
-body {
+#partnersCarousel .partner {
+    height: 40px;
+    width: 104px;
+    background-position-y: 40px;
+}
+
+    #partnersCarousel .partner:hover {
+        background-position-y: 0;
+        cursor: pointer;
+    }
+
+.border {
+    width: 1400px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+    .border.upper {
+        background: linear-gradient(to top,#ebebeb, transparent);
+    }
+
+    .border.lower {
+        background: linear-gradient(to bottom,#ebebeb, transparent);
+    }
+
+.map {
+    width: 1200px;
+    height: 464px;
+    background-image: url('../images/map.png');
 }
