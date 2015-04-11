@@ -1,0 +1,89 @@
+﻿footer {
+    background: #fdfdfd;
+    height: 100px;
+}
+
+.pre-footer, .post-footer {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+
+.pre-footer {
+    background-color: red;
+    right: 100%;
+    background: linear-gradient(to left, #fdfdfd, transparent);
+}
+
+.post-footer {
+    background-color: red;
+    left: 100%;
+     background: linear-gradient(to right, #fdfdfd, transparent);
+}
+
+footer .phones {
+    width: 1030px;
+    margin: 10px auto;
+}
+
+    footer .phones .phone {
+        display: inline-block;
+        width: 180px;
+        color: #99999b;
+        border-left: 3px solid #99999b;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+        footer .phones .phone:first-child {
+            border: none;
+        }
+
+.payments-and-social {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.payments, .social {
+    display: inline-block;
+    width: 49%;
+}
+
+    .payments .payment,
+    .social .social-link {
+        float: left;
+        margin: 0 5px;
+    }
+
+        .payments .payment:hover,
+        .social .social-link:hover {
+            cursor: pointer;
+        }
+
+    .social .social-link {
+        width: 32px;
+        height: 32px;
+        background-position-y: 32px;
+    }
+
+        .social .social-link:hover {
+            background-position-y: 0;
+        }
+
+.phones .phone.velcom.gray:before {
+    content: url('../images/velcom-gray.png');
+}
+
+.phones .phone.mts.gray:before {
+    content: url('../images/mts-gray.png');
+}
+
+.phones .phone.home.gray:before {
+    content: url('../images/home-gray.png');
+}
+
+footer .phones .phone:before {
+    background-size: contain;
+    position: relative;
+    top: 3px;
+}
