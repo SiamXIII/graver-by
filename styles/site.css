@@ -2,38 +2,38 @@
 @import url('reset.css');
 
 body {
-    margin: 0;
-    font-family: 'PT Sans', sans-serif;
-    overflow-x: hidden;
-    background-image: url('../images/background.png');
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+	overflow-x: hidden;
+	background-image: url('../images/background.png');
 }
 
 .clearfix:after {
-    content: ".";
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
 
 
 .main-wrapper {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
 }
 
 .logo-wrapper {
-    position: absolute;
-    background: url('../images/logo.png') 0 0 no-repeat;
-    width: 1923px;
-    height: 128px;
-    left: -380px;
-    top: 10px;
+	position: absolute;
+	background: url('../images/logo.png') 0 0 no-repeat;
+	width: 1923px;
+	height: 128px;
+	left: -380px;
+	top: 10px;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0 0 12px;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0 0 12px;
 }

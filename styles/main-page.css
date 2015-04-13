@@ -1,52 +1,74 @@
 ﻿@import url('header.css');
 
 #partnersCarousel {
-    background-color: #fdfdfd;
+	background-color: #fdfdfd;
 }
 
-    #partnersCarousel .partner {
-        height: 40px;
-        width: 104px;
-        background-position-y: 40px;
-    }
+	#partnersCarousel .partner {
+		height: 40px;
+		width: 104px;
+		background-position-y: 40px;
+	}
 
-        #partnersCarousel .partner:hover {
-            background-position-y: 0;
-            cursor: pointer;
-        }
+		#partnersCarousel .partner:hover {
+			background-position-y: 0;
+			cursor: pointer;
+		}
 
 .border {
-    width: 1400px;
-    height: 20px;
-    margin: 0 auto;
+	width: 1400px;
+	height: 20px;
+	margin: 0 auto;
 }
 
-    .border.upper {
-        background: linear-gradient(to top,#ebebeb, transparent);
-    }
+	.border.upper {
+		background: linear-gradient(to top,#ebebeb, transparent);
+	}
 
-    .border.lower {
-        background: linear-gradient(to bottom,#ebebeb, transparent);
-    }
+	.border.lower {
+		background: linear-gradient(to bottom,#ebebeb, transparent);
+	}
+
+.map-wrapper {
+	position: relative;
+	width: 1200px;
+	height: 488px;
+}
 
 .map {
-    width: 1200px;
-    height: 464px;
-    background-image: url('../images/map.png');
+	position: relative;
+	width: 1154px;
+	height: 439px;
+	background: url('../images/map.png')no-repeat;
+	top: 23px;
+	left: 23px;
+	-webkit-box-shadow: 0 0 32px 16px #e3e3e3;
+	-moz-box-shadow: 0 0 32px 16px #e3e3e3;
+	box-shadow: 0 0 32px 16px #e3e3e3;
 }
 
+	.map .title {
+		position: absolute;
+		background-color: rgba(0,170,255,0.75);
+		text-align: center;
+		bottom: 0;
+		width: 100%;
+		padding: 5px 0;
+		font-size: 24px;
+	}
+
 .pre-partner, .post-partner {
-    width: 200px;
-    height: 80px;
-    position: absolute;
+	width: 200px;
+	height: 80px;
+	position: absolute;
 }
 
 .pre-partner {
-    right: 100%;
-    background: linear-gradient(to left, #fdfdfd, transparent 40%);
+	right: 100%;
+	background: linear-gradient(to left, #fdfdfd, transparent 40%);
 }
 
 .post-partner {
-    left: 100%;
-     background: linear-gradient(to right, #fdfdfd, transparent 40%);
+	left: 100%;
+	background: linear-gradient(to right, #fdfdfd, transparent 40%);
 }
