@@ -1,6 +1,8 @@
 ﻿footer {
 	background: #fdfdfd;
 	height: 100px;
+	padding: 1px 0;
+	bottom: 0;
 }
 
 .pre-footer, .post-footer {
@@ -28,9 +30,9 @@ footer .phones {
 		display: inline-block;
 		width: 180px;
 		color: #99999b;
-		border-left: 3px solid #99999b;
+		border-left: 1px solid #99999b;
 		text-align: center;
-		padding: 5px 10px;
+		padding: 0 10px 4px 10px;
 	}
 
 		footer .phones .phone:first-child {
@@ -78,6 +80,11 @@ footer .phones {
 		.social .social-link:hover {
 			background-position-y: 0;
 		}
+
+
+.phones .phone:before {
+	margin-right:5px;
+}
 
 .phones .phone.velcom.gray:before {
 	content: url('../images/velcom-gray.png');

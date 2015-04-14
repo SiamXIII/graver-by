@@ -1,6 +1,10 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 @import url('reset.css');
 
+html {
+	margin:0;
+}
+
 body {
 	margin: 0;
 	font-family: 'PT Sans', sans-serif;
