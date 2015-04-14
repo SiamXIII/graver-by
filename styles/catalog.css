@@ -18,7 +18,6 @@ ul.catalog > li {
 	width: 167px;
 	height: 100%;
 	position: relative;
-	padding-top: 10px;
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -31,12 +30,18 @@ ul.catalog > li {
 	cursor: pointer;
 }
 
-.catalog > li > img {
-	margin-top: 10px;
+.catalog > li > .icon {
+	width: 168px;
+	height: 141px;
+	overflow: hidden;
 	position: relative;
 }
 
-.catalog > li > .title {
+.catalog > li:hover > .icon {
+	background-position-y: -141px;
+}
+
+.catalog > li .title {
 	position: absolute;
 	margin-bottom: 10px;
 	bottom: 10px;
