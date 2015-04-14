@@ -1,137 +1,137 @@
 ﻿#mainHeader {
-    height: 92px;
-    padding-top: 35px;
+	height: 92px;
+	padding-top: 35px;
 }
 
-    #mainHeader a {
-        text-decoration: none;
-        color: black;
-    }
+	#mainHeader a {
+		text-decoration: none;
+		color: black;
+	}
 
-        #mainHeader a:hover {
-        }
+		#mainHeader a:hover {
+		}
 
-    #mainHeader > ul {
-        height: 100%;
-    }
+	#mainHeader > ul {
+		height: 100%;
+	}
 
-        #mainHeader > ul > li {
-            float: left;
-            list-style-type: none;
-            position: relative;
-            top: 0;
-        }
+		#mainHeader > ul > li {
+			float: left;
+			list-style-type: none;
+			position: relative;
+			top: 0;
+		}
 
-    #mainHeader .logo-container {
-        width: 40%;
-    }
+	#mainHeader .logo-container {
+		width: 40%;
+	}
 
-    #mainHeader .phone-container,
-    #mainHeader .auth-container {
-        width: 15%;
-    }
+	#mainHeader .phone-container,
+	#mainHeader .auth-container {
+		width: 15%;
+	}
 
-    #mainHeader > ul > li > ul {
-        list-style-type: none;
-        font-size: 14px;
-    }
+	#mainHeader > ul > li > ul {
+		list-style-type: none;
+		font-size: 14px;
+	}
 
-        #mainHeader > ul > li > ul > li {
-            margin: 10px 0;
-        }
+		#mainHeader > ul > li > ul > li {
+			margin: 10px 0;
+		}
 
-    #mainHeader > ul > li > .phones .phone {
-    }
+	#mainHeader > ul > li > .phones .phone {
+	}
 
-        #mainHeader > ul > li > .phones .phone:before {
-            content: "";
-            background-size: contain;
-            padding-left: 20px;
-        }
+		#mainHeader > ul > li > .phones .phone:before {
+			content: "";
+			background-size: contain;
+			padding-left: 20px;
+		}
 
-        #mainHeader > ul > li > .phones .phone.velcom:before {
-            background: url('../images/velcom-logo.png') no-repeat;
-        }
+		#mainHeader > ul > li > .phones .phone.velcom:before {
+			background: url('../images/velcom-logo.png') 0 1px no-repeat;
+		}
 
-        #mainHeader > ul > li > .phones .phone.mts:before {
-            background: url('../images/mts-logo.png') no-repeat;
-        }
+		#mainHeader > ul > li > .phones .phone.mts:before {
+			background: url('../images/mts-logo.png') 0 1px no-repeat;
+		}
 
-        #mainHeader > ul > li > .phones .phone.home:before {
-            background: url('../images/home-logo.png') no-repeat;
-        }
+		#mainHeader > ul > li > .phones .phone.home:before {
+			background: url('../images/home-logo.png') 0 1px no-repeat;
+		}
 
-        #mainHeader > ul > li > .phones .phone.skype:before {
-            background: url('../images/skype-logo.png') no-repeat;
-        }
+		#mainHeader > ul > li > .phones .phone.skype:before {
+			background: url('../images/skype-logo.png') 0 1px no-repeat;
+		}
 
-    #mainHeader .auth-container {
-        padding-left: 40px;
-        background: url('../images/login-ico.png') 0 12px no-repeat;
-        background-size: auto;
-        box-sizing: border-box;
-    }
+	#mainHeader .auth-container {
+		padding-left: 40px;
+		background: url('../images/login-ico.png') 0 12px no-repeat;
+		background-size: auto;
+		box-sizing: border-box;
+	}
 
-        #mainHeader .auth-container li a:hover {
-            color: #0096e1;
-        }
+		#mainHeader .auth-container li a:hover {
+			color: #0096e1;
+		}
 
 .nav-wrapper {
-    background-color: black;
+	background-color: black;
 }
 
 .navbar {
-    height: 44px;
-    padding-left: 20px;
+	height: 44px;
+	padding-left: 20px;
 }
 
-    .navbar a {
-        text-decoration: none;
-        color: white;
-        margin: 12px 10px;
-        display: inline-block;
-    }
+	.navbar a {
+		text-decoration: none;
+		color: white;
+		margin: 12px 10px;
+		display: inline-block;
+	}
 
-        .navbar a:hover {
-            color: #0093dd;
-        }
+		.navbar a:hover {
+			color: #0093dd;
+		}
 
 .search-box {
-    float: right;
-    background: white;
-    margin-top: 8px;
-    border: 1px inset;
-    margin-right: 20px;
-    position: relative;
+	float: right;
+	background: white;
+	margin-top: 8px;
+	border: 1px inset;
+	margin-right: 20px;
+	position: relative;
 }
 
-    .search-box input[type="search"] {
-        height: 22px;
-        margin-right: 20px;
-        width: 300px;
-        background: white url('../images/search.png') 3px 3px no-repeat;
-        padding-left: 25px;
-        border: none;
-    }
+	.search-box input[type="search"] {
+		height: 22px;
+		margin-right: 20px;
+		width: 300px;
+		background: white url('../images/search.png') 3px 3px no-repeat;
+		padding-left: 25px;
+		border: none;
+	}
 
-        .search-box input[type="search"]:focus {
-            outline-width: 0;
-        }
+		.search-box input[type="search"]:focus {
+			outline-width: 0;
+		}
 
-    .search-box .search-button {
-        background-color: black;
-        height: 24px;
-        width: 64px;
-        float: right;
-        text-align: center;
-        color: white;
-        cursor: pointer;
-    }
+	.search-box .search-button {
+		background-color: black;
+		height: 24px;
+		width: 64px;
+		float: right;
+		text-align: center;
+		color: white;
+		cursor: pointer;
+	}
 
-        .search-box .search-button > div {
-            margin-top: 2px;
-        }
+		.search-box .search-button > div {
+			margin-top: 2px;
+		}
 
-        .search-box .search-button:hover {
-            box-shadow: rgba(0,0,0,0.5) 3px 3px inset;
-        }
+		.search-box .search-button:hover {
+			box-shadow: rgba(0,0,0,0.5) 3px 3px inset;
+		}
