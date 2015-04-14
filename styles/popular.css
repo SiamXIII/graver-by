@@ -1,5 +1,5 @@
 ﻿#popularSlider {
-	margin: 50px 0;
+	margin: 40px 0;
 	position: relative;
 }
 
@@ -26,18 +26,6 @@
 			cursor: default;
 			background-color: #d7d7d7;
 		}
-
-			/*#popularSlider .slide > div:hover:after {
-				content: "";
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 50px 50px 0 0;
-				border-color: #0096e1 transparent transparent transparent;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}*/
 
 			#popularSlider .slide > div:hover img {
 				opacity: 0.8;
@@ -106,7 +94,7 @@
 .arrowdn {
 	display: block;
 	width: 100%;
-	height: 50px;
+	height: 40px;
 	position: absolute;
 }
 
@@ -116,20 +104,20 @@
 
 	.arrow.up {
 		bottom: 100%;
-		background: url('../images/popular/up-arrow.png') center center no-repeat,linear-gradient(to top,#dcdcdc, #fafafa );
+		background: url('../images/popular/up-arrow.png') center center no-repeat,linear-gradient(to top,#ebebeb, transparent 40%);
 	}
 
 	.arrow.down {
 		top: 102%;
-		background: url('../images/popular/down-arrow.png') center center no-repeat,linear-gradient(to bottom,#dcdcdc, #fafafa);
+		background: url('../images/popular/down-arrow.png') center center no-repeat,linear-gradient(to bottom,#ebebeb, transparent 40%);
 	}
 
 	.arrowdn.up {
 		bottom: 100%;
-		background: url('../images/popular/up-arrow-pressed.png') center center no-repeat,linear-gradient(to top,#dcdcdc, #fafafa );
+		background: url('../images/popular/up-arrow-pressed.png') center center no-repeat,linear-gradient(to top,#ebebeb, transparent 40%);
 	}
 
 	.arrowdn.down {
 		top: 102%;
-		background: url('../images/popular/down-arrow-pressed.png') center center no-repeat,linear-gradient(to bottom,#dcdcdc, #fafafa);
+		background: url('../images/popular/down-arrow-pressed.png') center center no-repeat,linear-gradient(to bottom,#ebebeb, transparent 40%);
 	}

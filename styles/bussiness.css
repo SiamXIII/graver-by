@@ -1,41 +1,41 @@
-﻿.bussiness h2{
-    margin-bottom: 20px;
+﻿.bussiness h2 {
+	margin-bottom: 20px;
 }
 
-    .bussiness > div {
-        display: inline-block;
-        width: 31%;
-        margin: 1%;
-        height: 180px;
-        position: relative;
-        overflow: hidden;
-    }
+.bussiness > div {
+	display: inline-block;
+	width: 31%;
+	margin: 1%;
+	height: 180px;
+	position: relative;
+	overflow: hidden;
+}
 
-        .bussiness > div img {
-            width: 49%;
-            vertical-align: middle;
-            border-radius: 50%;
-        }
+	.bussiness > div img {
+		width: 49%;
+		vertical-align: middle;
+		border-radius: 50%;
+	}
 
-        .bussiness > div .info {
-            display: inline-block;
-            width: 49%;
-            height: 100%;
-            vertical-align: top;
-            padding: 5px;
-            box-sizing: border-box;
-            padding-left: 10px;
-        }
+	.bussiness > div .info {
+		display: inline-block;
+		width: 49%;
+		height: 100%;
+		vertical-align: top;
+		padding: 5px;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
 
-            .bussiness > div .info h3 {
-                font-weight: bold;
-                margin-bottom: 10px;
-                margin-top: 10%;
-                height: 20%;
-            }
+		.bussiness > div .info h3 {
+			font-weight: bold;
+			margin-bottom: 10px;
+			margin-top: 10%;
+			height: 20%;
+		}
 
-            .bussiness > div .info .description {
-                height: 60%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
+		.bussiness > div .info .description {
+			height: 60%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
