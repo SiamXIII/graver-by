@@ -24,9 +24,10 @@
 
 		#popularSlider .slide > div:hover {
 			cursor: default;
+			background-color: #d7d7d7;
 		}
 
-			#popularSlider .slide > div:hover:after {
+			/*#popularSlider .slide > div:hover:after {
 				content: "";
 				width: 0;
 				height: 0;
@@ -36,21 +37,25 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-			}
+			}*/
 
 			#popularSlider .slide > div:hover img {
 				opacity: 0.8;
 			}
 
-			#popularSlider .slide > div:hover .img-wrapper:after {
-				border: 2px solid #0096e1;
-				content: "";
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
+		#popularSlider .slide > div .img-wrapper:after {
+			border: 2px solid #d7d7d7;
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+
+		#popularSlider .slide > div:hover .img-wrapper:after {
+			border: 2px solid #0096e1;
+		}
 
 
 		#popularSlider .slide > div img {
@@ -64,32 +69,38 @@
 			height: 100%;
 			vertical-align: top;
 			padding: 5px;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 		}
 
-			#popularSlider .slide > div .info h3 {
-				font-weight: bold;
-				margin-bottom: 10px;
-				height: 20%;
-			}
+		#popularSlider .slide > div .info h3 {
+			font-weight: bold;
+			margin-bottom: 10px;
+			height: 20%;
+		}
 
-			#popularSlider .slide > div .info .description {
-				height: 60%;
-				overflow: hidden;
-				text-overflow: ellipsis;
-			}
+		#popularSlider .slide > div:hover .info h3 {
+			color: #0096e1;
+		}
 
-			#popularSlider .slide > div .info .details {
-				border-top: 2px solid black;
-				text-align: right;
-				height: 20%;
-				padding-top: 3px;
-			}
+		#popularSlider .slide > div .info .description {
+			height: 60%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 
-				#popularSlider .slide > div .info .details a {
-					color: #0096e1;
-					text-decoration: none;
-				}
+		#popularSlider .slide > div .info .details {
+			border-top: 2px solid black;
+			text-align: right;
+			height: 20%;
+			padding-top: 3px;
+		}
+
+			#popularSlider .slide > div .info .details a {
+				color: #0096e1;
+				text-decoration: none;
+			}
 
 .arrow,
 .arrowdn {
