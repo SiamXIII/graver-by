@@ -11,17 +11,20 @@
 
 .catalog {
 	height: 100%;
-	background-color: #00aaff;
 }
 
 ul.catalog > li {
-	width: 167px;
+	width: 171.4px;
 	height: 100%;
 	position: relative;
 	box-sizing: border-box;
-	display: inline-block;
+	display: block;
+	float: left;
 	vertical-align: top;
 	text-align: center;
+	border-left: 1px solid #0081c2;
+	border-right: 1px solid #0081c2;
+	background: linear-gradient(#00aaff,#008cd3);
 }
 
 .catalog > li:hover {
@@ -31,7 +34,7 @@ ul.catalog > li {
 }
 
 .catalog > li > .icon {
-	width: 168px;
+	width: 100%;
 	height: 141px;
 	overflow: hidden;
 	position: relative;

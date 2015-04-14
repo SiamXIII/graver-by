@@ -37,3 +37,7 @@ h2 {
 	font-weight: bold;
 	margin: 10px 0 0 12px;
 }
+
+.overlay-wrapper {
+	background: linear-gradient(to bottom, white 60%, transparent);
+}

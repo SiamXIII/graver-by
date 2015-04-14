@@ -74,11 +74,11 @@
 			box-sizing: border-box;
 		}
 
-		#popularSlider .slide > div .info h3 {
-			font-weight: bold;
-			margin-bottom: 10px;
-			height: 20%;
-		}
+			#popularSlider .slide > div .info h3 {
+				font-weight: bold;
+				margin-bottom: 10px;
+				height: 20%;
+			}
 
 		#popularSlider .slide > div:hover .info h3 {
 			color: #0096e1;
@@ -116,20 +116,20 @@
 
 	.arrow.up {
 		bottom: 100%;
-		background: linear-gradient(to top,#ebebeb, transparent 40%), url('../images/popular/up-arrow.png') center center no-repeat;
+		background: url('../images/popular/up-arrow.png') center center no-repeat,linear-gradient(to top,#dcdcdc, #fafafa );
 	}
 
 	.arrow.down {
 		top: 102%;
-		background: linear-gradient(to bottom,#ebebeb, transparent 60%), url('../images/popular/down-arrow.png') center center no-repeat;
+		background: url('../images/popular/down-arrow.png') center center no-repeat,linear-gradient(to bottom,#dcdcdc, #fafafa);
 	}
 
 	.arrowdn.up {
 		bottom: 100%;
-		background: linear-gradient(to top,#ebebeb, transparent 40%), url('../images/popular/up-arrow-pressed.png') center center no-repeat;
+		background: url('../images/popular/up-arrow-pressed.png') center center no-repeat,linear-gradient(to top,#dcdcdc, #fafafa );
 	}
 
 	.arrowdn.down {
 		top: 102%;
-		background: linear-gradient(to bottom,#ebebeb, transparent 60%), url('../images/popular/down-arrow-pressed.png') center center no-repeat;
+		background: url('../images/popular/down-arrow-pressed.png') center center no-repeat,linear-gradient(to bottom,#dcdcdc, #fafafa);
 	}
