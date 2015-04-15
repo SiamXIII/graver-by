@@ -23,6 +23,8 @@
 		height: 100%;
 		vertical-align: top;
 		padding: 5px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		padding-left: 10px;
 	}
@@ -37,5 +39,7 @@
 		.bussiness > div .info .description {
 			height: 60%;
 			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
 			text-overflow: ellipsis;
 		}

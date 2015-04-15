@@ -1,0 +1,105 @@
+﻿#instagram {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+	#instagram li {
+		list-style: none;
+		float: left;
+		margin: 0;
+		width: 20%;
+		border: 2px solid #b0b0b0;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+		#instagram li:hover {
+			border-color: #00aaff;
+			cursor: pointer;
+		}
+
+		#instagram li img {
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		#instagram li:hover img {
+		}
+
+.pager {
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: white;
+}
+
+	.pager a {
+		color: #868686;
+		margin: 2px 2px;
+		font-size: 17px;
+		text-decoration: none;
+		vertical-align: middle;
+	}
+
+		.pager a:hover {
+			cursor: pointer;
+		}
+
+	.pager .jp-previous {
+		background-image: url('../images/portfolio/left-arrow.png');
+		width: 8px;
+		height: 17px;
+		display: inline-block;
+	}
+
+	.pager .jp-next {
+		background-image: url('../images/portfolio/right-arrow.png');
+		width: 8px;
+		height: 17px;
+		display: inline-block;
+	}
+
+	.pager .jp-current {
+		color: #61c5fc;
+	}
+
+#fullImageContainer {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+	#fullImageContainer .image-wrapper {
+		width: 680px;
+		height: 680px;
+		margin: auto;
+		padding: 20px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: white;
+	}
+
+		#fullImageContainer .image-wrapper img {
+			position: relative;
+		}
+
+	#fullImageContainer .underlay {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		position: absolute;
+		cursor: pointer;
+	}

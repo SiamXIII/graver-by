@@ -1,6 +1,5 @@
 ﻿#mainHeader {
-	height: 92px;
-	padding-top: 35px;
+	height: 127px;
 }
 
 	#mainHeader a {
@@ -24,11 +23,13 @@
 
 	#mainHeader .logo-container {
 		width: 40%;
+		height: 100%;
 	}
 
 	#mainHeader .phone-container,
 	#mainHeader .auth-container {
 		width: 15%;
+		padding-top: 35px;
 	}
 
 	#mainHeader > ul > li > ul {
@@ -67,7 +68,7 @@
 
 	#mainHeader .auth-container {
 		padding-left: 40px;
-		background: url('../images/login-ico.png') 0 12px no-repeat;
+		background: url('../images/login-ico.png') 0 47px no-repeat;
 		background-size: auto;
 		box-sizing: border-box;
 	}

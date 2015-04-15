@@ -17,6 +17,8 @@ ul.catalog > li {
 	width: 171.4px;
 	height: 100%;
 	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	display: block;
 	float: left;
@@ -60,9 +62,9 @@ ul.catalog > li {
 	padding: 20px 0 10px 0;
 	width: 200%;
 	z-index: 10;
-	-webkit-box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.52);
-	-moz-box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.52);
-	box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.52);
+	-webkit-box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
+	-moz-box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
+	box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
 }
 
 .catalog > li.last > .submenu {
@@ -96,6 +98,8 @@ ul.catalog > li {
 	width: 50%;
 	margin: 5px 0;
 	padding: 0 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
