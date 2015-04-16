@@ -121,6 +121,7 @@
 		height: 48px;
 		position: absolute;
 		top: 307px;
+		cursor: pointer;
 	}
 
 	#fullImageContainer .left.arrow {
