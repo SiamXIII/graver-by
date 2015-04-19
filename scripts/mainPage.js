@@ -45,4 +45,25 @@
 	$('.partner').click(function () {
 		window.location = this.attributes["href"].value;
 	});
+
+	var map;
+	function initialize() {
+	    var mapOptions = {
+	        zoom: 17,
+	        center: new google.maps.LatLng(53.91555797, 27.56966678)
+	    };
+	    map = new google.maps.Map(document.getElementById('mapCanvas'),
+            mapOptions);
+
+	    var marker = new google.maps.Marker({
+	        position: new google.maps.LatLng(53.91555797, 27.56966678),
+	        map: map,
+	        labelContent: "Гравер 123",
+	        labelAnchor: new google.maps.Point(22, 0),
+	        labelClass: "labels", // the CSS class for the label
+	        labelStyle: { opacity: 0.75 }
+	    });
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
 });
