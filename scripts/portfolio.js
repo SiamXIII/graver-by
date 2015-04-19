@@ -40,6 +40,16 @@
 							$('#fullImageContainer').hide('fast');
 						})
 
+						$('#fullImageContainer .close-button').click(function () {
+						    $('#fullImageContainer').hide('fast');
+						})
+
+						$(document).keyup(function(e) {
+						    if (e.keyCode == 27) {
+						        $('#fullImageContainer').hide('fast');
+						    }
+						});
+
 						$("div.pager").jPages({
 							containerID: "instagram",
 							perPage: 25,

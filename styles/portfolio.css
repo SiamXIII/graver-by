@@ -1,135 +1,153 @@
 ﻿#instagram {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-	#instagram li {
-		list-style: none;
-		float: left;
-		margin: 0;
-		width: 20%;
-		border: 2px solid #b0b0b0;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		background-color: black;
-	}
+    #instagram li {
+        list-style: none;
+        float: left;
+        margin: 0;
+        width: 20%;
+        border: 2px solid #b0b0b0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: black;
+    }
 
-		#instagram li:hover {
-			border-color: #00aaff;
-			cursor: pointer;
-		}
+        #instagram li:hover {
+            border-color: #00aaff;
+            cursor: pointer;
+        }
 
-		#instagram li img {
-			width: 100%;
-			vertical-align: middle;
-		}
+        #instagram li img {
+            width: 100%;
+            vertical-align: middle;
+        }
 
-		#instagram li:hover img {
-			opacity: 0.7;
-		}
+        #instagram li:hover img {
+            opacity: 0.7;
+        }
 
 .pager {
-	text-align: center;
-	margin: 0 auto;
-	padding: 10px 0;
-	background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: white;
 }
 
-	.pager a {
-		color: #868686;
-		margin: 2px 2px;
-		font-size: 17px;
-		text-decoration: none;
-		vertical-align: middle;
-	}
+    .pager a {
+        color: #868686;
+        margin: 2px 2px;
+        font-size: 17px;
+        text-decoration: none;
+        vertical-align: middle;
+    }
 
-		.pager a:hover {
-			cursor: pointer;
-		}
+        .pager a:hover {
+            cursor: pointer;
+        }
 
-	.pager .jp-previous {
-		background-image: url('../images/portfolio/left-arrow.png');
-		width: 8px;
-		height: 17px;
-		display: inline-block;
-	}
+    .pager .jp-previous {
+        background-image: url('../images/portfolio/left-arrow.png');
+        width: 8px;
+        height: 17px;
+        display: inline-block;
+    }
 
-	.pager .jp-next {
-		background-image: url('../images/portfolio/right-arrow.png');
-		width: 8px;
-		height: 17px;
-		display: inline-block;
-	}
+    .pager .jp-next {
+        background-image: url('../images/portfolio/right-arrow.png');
+        width: 8px;
+        height: 17px;
+        display: inline-block;
+    }
 
-	.pager .jp-current {
-		color: #61c5fc;
-	}
+    .pager .jp-current {
+        color: #61c5fc;
+    }
 
 #fullImageContainer {
-	position: fixed;
-	display: none;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 20;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
 }
 
-	#fullImageContainer .image-wrapper {
-		width: 650px;
-		height: 650px;
-		margin: auto;
-		padding: 5px;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background-color: #e7e8e9;
-	}
+    #fullImageContainer .image-wrapper {
+        width: 650px;
+        height: 650px;
+        margin: auto;
+        padding: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #e7e8e9;
+    }
 
-		#fullImageContainer .image-wrapper img {
-			position: relative;
-		}
+        #fullImageContainer .image-wrapper img {
+            position: relative;
+        }
 
-	#fullImageContainer .underlay {
-		background-color: black;
-		width: 100%;
-		height: 100%;
-		opacity: 0.7;
-		position: absolute;
-		cursor: pointer;
-	}
+    #fullImageContainer .underlay {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        position: absolute;
+        cursor: pointer;
+    }
 
-	#fullImageContainer #description {
-		padding: 10px 5px;
-		font-size: 18px;
-		position: absolute;
-		bottom: 5px;
-		background-color: rgba(119,112,115,0.8);
-		width: 630px;
-		color: white;
-	}
+    #fullImageContainer #description {
+        padding: 10px 5px;
+        font-size: 18px;
+        position: absolute;
+        bottom: 5px;
+        background-color: rgba(119,112,115,0.8);
+        width: 630px;
+        color: white;
+    }
 
-	#fullImageContainer .arrow {
-		width: 24px;
-		height: 48px;
-		position: absolute;
-		top: 307px;
-		cursor: pointer;
-	}
+    #fullImageContainer .arrow {
+        width: 16%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position-y: 307px;
+    }
 
-	#fullImageContainer .left.arrow {
-		background-image: url('../images/portfolio/full-left-arrow.png');
-		right: 101%;
-	}
+    #fullImageContainer .left.arrow {
+        background-image: url('../images/portfolio/full-left-arrow.png');
+        right: 100.8%;
+        background-position-x: right;
+    }
 
-	#fullImageContainer .right.arrow {
-		background-image: url('../images/portfolio/full-right-arrow.png');
-		left: 101%;
-	}
+    #fullImageContainer .right.arrow {
+        background-image: url('../images/portfolio/full-right-arrow.png');
+        left: 101%;
+    }
+
+    #fullImageContainer .close-button {
+        background-image: url('../images/portfolio/cross.png');
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        width: 33px;
+        height: 33px;
+        cursor: pointer;
+    }
+
+        #fullImageContainer .arrow:hover,
+        #fullImageContainer .close-button:hover {
+            opacity: 0.6;
+        }
