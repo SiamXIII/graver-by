@@ -79,22 +79,28 @@
 
         currentImage.onload = function () {
             $('#fullImage').replaceWith(currentImage);
-            $('#fullImage').hide();
+            $('#fullImage').css({ 'left': '100%' });
             $('#fullImageContainer').show('fast');
-            $('#fullImage').fadeIn('fast');
+            $('#fullImage').animate({
+                left: 0
+            }, 'fast')
         };
     }
 
     function getNextImage() {
         selectedImage = $(selectedImage).parent('.tile').next('.tile').children('img')[0];
-        $('#fullImage').fadeOut('fast', function () {
+        $('#fullImage').animate({
+            left: '-100%'
+        }, 'fast', function () {
             setFullImage(selectedImage)
         });
     }
 
     function getPrevImage() {
         selectedImage = $(selectedImage).parent('.tile').prev('.tile').children('img')[0];
-        $('#fullImage').fadeOut('fast', function () {
+        $('#fullImage').animate({
+            left: '-100%'
+        }, 'fast', function () {
             setFullImage(selectedImage)
         });
     }

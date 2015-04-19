@@ -93,6 +93,10 @@
         background-color: #e7e8e9;
     }
 
+        #fullImageContainer .image-wrapper .container {
+            overflow: hidden;
+        }
+
         #fullImageContainer .image-wrapper img {
             position: relative;
         }
