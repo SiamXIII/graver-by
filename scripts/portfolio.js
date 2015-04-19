@@ -2,6 +2,9 @@
     var instagramUrl = 'https://api.instagram.com/v1/users/732051385/media/recent/?access_token=732051385.674061d.3cab369edb5147adbf8a8285f70c423e&count=60 ';
 
     var selectedImage = 0;
+    var direction;
+
+    $('#instagram').hide();
 
     function getNext(instaUrl) {
         $.ajax({
@@ -50,6 +53,7 @@
                             }
                         });
 
+                        $('#instagram').show();
                         $("div.pager").jPages({
                             containerID: "instagram",
                             perPage: 25,
@@ -71,15 +75,16 @@
         return hashtags;
     }
 
-    function setFullImage(image) {
+    function setFullImage(image, dir) {
         var currentImage = new Image();
+        direction = dir;
         currentImage.src = image.attributes['data-full'].value;
         currentImage.id = 'fullImage';
         $('#description').text(image.attributes['data-tags'].value);
 
         currentImage.onload = function () {
             $('#fullImage').replaceWith(currentImage);
-            $('#fullImage').css({ 'left': '100%' });
+            $('#fullImage').css({ 'left': direction });
             $('#fullImageContainer').show('fast');
             $('#fullImage').animate({
                 left: 0
@@ -92,16 +97,16 @@
         $('#fullImage').animate({
             left: '-100%'
         }, 'fast', function () {
-            setFullImage(selectedImage)
+            setFullImage(selectedImage, '100%')
         });
     }
 
     function getPrevImage() {
         selectedImage = $(selectedImage).parent('.tile').prev('.tile').children('img')[0];
         $('#fullImage').animate({
-            left: '-100%'
+            left: '100%'
         }, 'fast', function () {
-            setFullImage(selectedImage)
+            setFullImage(selectedImage, '-100%')
         });
     }
 
