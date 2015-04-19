@@ -81,6 +81,16 @@
         currentImage.src = image.attributes['data-full'].value;
         currentImage.id = 'fullImage';
         $('#description').text(image.attributes['data-tags'].value);
+        
+        $('#fullImageContainer .left.arrow').show();
+        $('#fullImageContainer .right.arrow').show();
+        if ($($(selectedImage)[0].parentElement).is(':first-child')) {
+            $('#fullImageContainer .left.arrow').hide();
+        }
+
+        if ($($(selectedImage)[0].parentElement).is(':last-child')) {
+            $('#fullImageContainer .right.arrow').hide();
+        }
 
         currentImage.onload = function () {
             $('#fullImage').replaceWith(currentImage);
