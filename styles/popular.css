@@ -4,7 +4,7 @@
 }
 
 	#popularSlider .slide > div {
-		display: inline-block;
+		float: left;
 		width: 31%;
 		margin: 1%;
 		background-color: #ebebeb;

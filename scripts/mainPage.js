@@ -1,7 +1,8 @@
 ﻿jQuery(document).ready(function ($) {
 	//popular slider
 	var popularOptions = {
-		$AutoPlay: false,
+		$AutoPlay: true,
+		$AutoPlayInterval: 15000,
 		$DragOrientation: 2,
 		$PlayOrientation: 2,
 		$ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
@@ -48,21 +49,46 @@
 
 	var map;
 	function initialize() {
-	    var mapOptions = {
-	        zoom: 17,
-	        center: new google.maps.LatLng(53.91555797, 27.56966678)
-	    };
-	    map = new google.maps.Map(document.getElementById('mapCanvas'),
+		var mapOptions = {
+			zoom: 17,
+			center: new google.maps.LatLng(53.91555797, 27.56966678)
+		};
+		map = new google.maps.Map(document.getElementById('mapCanvas'),
             mapOptions);
 
-	    var marker = new google.maps.Marker({
-	        position: new google.maps.LatLng(53.91555797, 27.56966678),
-	        map: map,
-	        labelContent: "Гравер 123",
-	        labelAnchor: new google.maps.Point(22, 0),
-	        labelClass: "labels", // the CSS class for the label
-	        labelStyle: { opacity: 0.75 }
-	    });
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(53.91555797, 27.56966678),
+			map: map,
+			labelContent: "Гравер 123",
+			labelAnchor: new google.maps.Point(22, 0),
+			labelClass: "labels", // the CSS class for the label
+			labelStyle: { opacity: 0.75 }
+		});
+
+		// Disable scroll zooming and bind back the click event
+		var onMapMouseleaveHandler = function (event) {
+			var that = $(this);
+
+			that.on('click', onMapClickHandler);
+			that.off('mouseleave', onMapMouseleaveHandler);
+			that.find('.map').css("pointer-events", "none");
+		}
+
+		var onMapClickHandler = function (event) {
+			var that = $(this);
+
+			// Disable the click handler until the user leaves the map area
+			that.off('click', onMapClickHandler);
+
+			// Enable scrolling zoom
+			that.find('.map').css("pointer-events", "auto");
+
+			// Handle the mouse leave event
+			that.on('mouseleave', onMapMouseleaveHandler);
+		}
+
+		// Enable map zooming with mouse scroll when the user clicks the map
+		$('.map-wrapper').on('click', onMapClickHandler);
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);

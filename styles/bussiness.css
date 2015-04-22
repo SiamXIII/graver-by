@@ -6,15 +6,29 @@
 	display: inline-block;
 	width: 31%;
 	margin: 1%;
-	height: 182px;
+	height: 148px;
 	position: relative;
 	overflow: hidden;
 }
 
+	.bussiness > div .img-wrapper {
+		width: 148px;
+		height: 100%;
+		border-radius: 50%;
+		background-color: black;
+		display: inline-block;
+		cursor: pointer;
+	}
+
 	.bussiness > div img {
-		width: 49%;
+		width: 148px;
+		height: 100%;
 		vertical-align: middle;
 		border-radius: 50%;
+	}
+
+	.bussiness > div:hover img {
+		opacity: 0.8;
 	}
 
 	.bussiness > div .info {
@@ -27,6 +41,7 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		padding-left: 10px;
+		cursor: default;
 	}
 
 		.bussiness > div .info h3 {
@@ -36,10 +51,14 @@
 			height: 20%;
 		}
 
-		.bussiness > div .info .description {
-			height: 60%;
-			overflow: hidden;
-			-ms-text-overflow: ellipsis;
-			-o-text-overflow: ellipsis;
-			text-overflow: ellipsis;
-		}
+	.bussiness > div:hover .info h3 {
+		color: #0096e1;
+	}
+
+	.bussiness > div .info .description {
+		height: 66px;
+		overflow: hidden;
+		-ms-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+	}
