@@ -1,6 +1,5 @@
 ﻿.samples-wrapper {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .samples {
@@ -17,14 +16,18 @@
         -webkit-box-shadow: 0 0 16px 2px rgba(50, 50, 50, 0.54);
         -moz-box-shadow: 0 0 16px 2px rgba(50, 50, 50, 0.54);
         box-shadow: 0 0 16px 2px rgba(50, 50, 50, 0.54);
+        display: table-row;
     }
 
         .samples .tab-control .tab {
-            float: left;
+            display: table-cell;
             width: 173px;
             color: #6e6767;
             padding: 5px 20px;
             text-align: center;
+            vertical-align: middle;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
 
@@ -79,6 +82,80 @@
                 .samples .page .item .image-wrapper img {
                     vertical-align: middle;
                 }
+
+.info h2 {
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.info p {
+    margin: 10px;
+    white-space: pre-line;
+}
+
+.info .features {
+    padding: 0 0.5%;
+}
+
+    .info .features .feature {
+        float: left;
+        width: 31%;
+        margin: 10px 1%;
+        position: relative;
+        display: table-row;
+    }
+
+        .info .features .feature > div {
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+
+.prices {
+    margin: 20px 10px;
+    width: 100%;
+    -webkit-box-shadow: 0 0 12px 2px rgba(50, 50, 50, 0.54);
+    -moz-box-shadow: 0 0 12px 2px rgba(50, 50, 50, 0.54);
+    box-shadow: 0 0 12px 2px rgba(50, 50, 50, 0.54);
+}
+
+    .prices td {
+        width: 33%;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.1em;
+        color: #6e6767;
+        position: relative;
+    }
+
+        .prices td:not(:first-child):before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 20%;
+            height: 60%;
+            border-left: 3px solid #afafaf;
+        }
+
+
+    .prices thead tr {
+        background-color: #e9e9e9;
+    }
+
+    .prices tr {
+        background-color: #fff;
+    }
+
+        .prices tr:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+
+.disclaimer {
+    text-align: center;
+    color: #ff0000;
+    text-transform: uppercase;
+}
 
 /*full image*/
 #fullImageContainer {
