@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
 
 		currentImage.onload = function () {
 			$('#fullImage').replaceWith(currentImage);
-			setMeasures($(currentImage)[0].width, $(currentImage)[0].height, $(currentImage)[0].width / $(currentImage)[0].height);
+			//setMeasures($(currentImage)[0].width, $(currentImage)[0].height, $(currentImage)[0].width / $(currentImage)[0].height);
 			$('#fullImage').css({ 'left': direction });
 			$('#fullImageContainer').show('fast');
 			$('#fullImage').animate({

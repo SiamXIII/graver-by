@@ -60,9 +60,9 @@ h2 {
 }
 
 	.border.upper {
-		background: linear-gradient(to top,#ebebeb, transparent);
+		background-image: linear-gradient(to top,#ebebeb, #fff);
 	}
 
 	.border.lower {
-		background: linear-gradient(to bottom,#ebebeb, transparent);
+		background-image: linear-gradient(to bottom,#ebebeb, #fff);
 	}
