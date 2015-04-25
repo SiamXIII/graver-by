@@ -22,6 +22,7 @@ jQuery(document).ready(function ($) {
 			$('#fullImageContainer .image-wrapper').width($(window).width() * 0.8);
 			$('#fullImageContainer .image-wrapper').height($(window).width() * 0.8 / ratio);
 		}
+		$('#fullImageContainer .image-wrapper').css('top', $('#fullImageContainer').height() * 0.1);
 	}
 
 	function setFullImage(image, dir) {

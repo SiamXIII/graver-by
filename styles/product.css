@@ -1,5 +1,5 @@
 ﻿.samples-wrapper {
-	margin-top: 40px;
+	margin-top: 70px;
 }
 
 .samples {
@@ -13,15 +13,15 @@
 		border-radius: 5px 5px 0 0;
 		background-color: #efefef;
 		border-bottom: 1px solid #d4d4d3;
-		-webkit-box-shadow: 0 0 16px 2px rgba(50, 50, 50, 0.54);
-		-moz-box-shadow: 0 0 16px 2px rgba(50, 50, 50, 0.54);
-		box-shadow: 0 0 16px 2px rgba(50, 50, 50, 0.54);
+		-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.58);
+		-moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.58);
+		box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.58);
 		display: table-row;
 	}
 
 		.samples .tab-control .tab {
 			display: table-cell;
-			width: 173px;
+			width: 171.4px;
 			color: #6e6767;
 			padding: 5px 20px;
 			text-align: center;
@@ -31,6 +31,10 @@
 			box-sizing: border-box;
 		}
 
+			.samples .tab-control .tab:not(:first-child) {
+				border-left: 2px solid #d5d5d5;
+			}
+
 			.samples .tab-control .tab.active {
 				margin-bottom: -1px;
 				background-color: #ffffff;
@@ -39,7 +43,12 @@
 				-webkit-box-shadow: 0 0 30px 4px rgba(50, 50, 50, 0.54);
 				-moz-box-shadow: 0 0 30px 4px rgba(50, 50, 50, 0.54);
 				box-shadow: 0 0 30px 4px rgba(50, 50, 50, 0.54);
+				border-color: #ffffff;
 			}
+
+				.samples .tab-control .tab.active + .tab {
+					border: none;
+				}
 
 			.samples .tab-control .tab:hover {
 				color: #00aaff;
@@ -177,7 +186,6 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		position: relative;
-		top: 10%;
 		background-color: #e7e8e9;
 	}
 
@@ -186,6 +194,7 @@
 			width: 100%;
 			overflow: hidden;
 			text-align: center;
+			position: relative;
 		}
 
 		#fullImageContainer .image-wrapper img {
@@ -222,18 +231,18 @@
 		cursor: pointer;
 		top: 0;
 		background-repeat: no-repeat;
-		background-position-y: 52%;
 	}
 
 	#fullImageContainer .left.arrow {
 		background-image: url('../images/portfolio/full-left-arrow.png');
 		right: 100.8%;
-		background-position-x: right;
+		background-position: right 52%;
 	}
 
 	#fullImageContainer .right.arrow {
 		background-image: url('../images/portfolio/full-right-arrow.png');
 		left: 101%;
+		background-position: left 52%;
 	}
 
 	#fullImageContainer .close-button {
@@ -248,11 +257,11 @@
 	}
 
 		#fullImageContainer .close-button:hover {
-			background-position-x: -25px;
+			background-position: -25px 0;
 		}
 
 		#fullImageContainer .close-button:active {
-			background-position-x: -50px;
+			background-position: -50px 0;
 		}
 
 	#fullImageContainer .arrow:hover {
