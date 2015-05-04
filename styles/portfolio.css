@@ -127,18 +127,18 @@
 		cursor: pointer;
 		top: 0;
 		background-repeat: no-repeat;
-		background-position-y: 307px;
 	}
 
 	#fullImageContainer .left.arrow {
 		background-image: url('../images/portfolio/full-left-arrow.png');
 		right: 100.8%;
-		background-position-x: right;
+		background-position: right 307px;
 	}
 
 	#fullImageContainer .right.arrow {
 		background-image: url('../images/portfolio/full-right-arrow.png');
 		left: 101%;
+        background-position: 0 307px;
 	}
 
 	#fullImageContainer .close-button {
@@ -153,11 +153,11 @@
 	}
 
 		#fullImageContainer .close-button:hover {
-			background-position-x: -25px;
+			background-position: -25px 0;
 		}
 
 		#fullImageContainer .close-button:active {
-			background-position-x: -50px;
+			background-position: -50px 0;
 		}
 
 	#fullImageContainer .arrow:hover {

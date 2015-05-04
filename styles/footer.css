@@ -59,11 +59,11 @@ footer .phones {
 		width: 80px;
 		height: 32px;
 		overflow: hidden;
-		background-position-y: 32px;
+		background-position: 0 32px;
 	}
 
 		.payments .payment:hover {
-			background-position-y: 0;
+			background-position: 0 0;
 		}
 
 		.payments .payment:hover,
@@ -74,11 +74,11 @@ footer .phones {
 	.social .social-link {
 		width: 32px;
 		height: 32px;
-		background-position-y: 32px;
+		background-position: 0 32px;
 	}
 
 		.social .social-link:hover {
-			background-position-y: 0;
+			background-position: 0 0;
 		}
 
 

@@ -5,11 +5,11 @@
 	#partnersCarousel .partner {
 		height: 40px;
 		width: 104px;
-		background-position-y: 40px;
+		background-position: 0 40px;
 	}
 
 		#partnersCarousel .partner:hover {
-			background-position-y: 0;
+			background-position: 0 0;
 			cursor: pointer;
 		}
 

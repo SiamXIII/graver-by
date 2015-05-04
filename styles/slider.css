@@ -7,52 +7,56 @@
             .jssorb06 .dn           (mousedown)
             */
 .jssorb06 {
-	position: absolute;
+    position: absolute;
 }
 
-	.jssorb06 div, .jssorb06 div:hover, .jssorb06 .av {
-		position: absolute;
-		/* size of bullet elment */
-		width: 18px;
-		height: 18px;
-		background: url(../images/b06.png) no-repeat;
-		overflow: hidden;
-		cursor: pointer;
-	}
+    .jssorb06 div, .jssorb06 div:hover, .jssorb06 .av {
+        position: absolute;
+        /* size of bullet elment */
+        width: 18px;
+        height: 18px;
+        background: url(../images/b06.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
 
-	.jssorb06 div {
-		background-position: -6px -6px;
-	}
+    .jssorb06 div {
+        background-position: -6px -6px;
+    }
 
-		.jssorb06 div:hover, .jssorb06 .av:hover {
-			background-position: -36px -6px;
-		}
+        .jssorb06 div:hover, .jssorb06 .av:hover {
+            background-position: -36px -6px;
+        }
 
-	.jssorb06 .av {
-		background-position: -66px -6px;
-	}
+    .jssorb06 .av {
+        background-position: -66px -6px;
+    }
 
-	.jssorb06 .dn, .jssorb06 .dn:hover {
-		background-position: -96px -6px;
-	}
+    .jssorb06 .dn, .jssorb06 .dn:hover {
+        background-position: -96px -6px;
+    }
+
+#mainSlider .slides > div:hover {
+    cursor: pointer;
+}
 
 #mainSlider .caption {
-	padding: 10px 20px;
-	font-size: 20px;
-	background: linear-gradient(160deg,rgba(66,172,226,1) 30%, rgba(255,255,255,0) 60%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 600px;
-	height: 44px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(160deg,rgba(66,172,226,1) 30%, rgba(255,255,255,0) 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 44px;
 }
 
-	#mainSlider .caption a {
-		color: white;
-		text-decoration: none;
-		font-weight: normal;
-	}
+    #mainSlider .caption a {
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+    }
 
-		#mainSlider .caption a:hover {
-			color: #0093dd;
-		}
+        #mainSlider .caption a:hover {
+            color: #0093dd;
+        }
