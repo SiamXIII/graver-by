@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
         $('#fullImageContainer .left.arrow').show();
         $('#fullImageContainer .right.arrow').show();
         if ($($(selectedImage)[0].parentElement.parentElement)
-            .index('.item') == 0) {
+            .index() == 1) {
             $('#fullImageContainer .left.arrow').hide();
         }
 

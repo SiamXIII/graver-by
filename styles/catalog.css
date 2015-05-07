@@ -1,129 +1,130 @@
 ﻿.catalog-area {
-	background: url('../images/catalog-background.png') no-repeat;
-	width: 100%;
-	height: 141px;
-	margin-bottom: 10px;
+    background: url('../images/catalog-background.png') no-repeat;
+    width: 100%;
+    height: 141px;
+    margin-bottom: 10px;
 }
 
-	.catalog-area .main-wrapper {
-		height: 100%;
-	}
+    .catalog-area .main-wrapper {
+        height: 100%;
+    }
 
 .catalog {
-	height: 100%;
+    height: 100%;
 }
 
 ul.catalog > li {
-	width: 171.4px;
-	height: 100%;
-	position: relative;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-	float: left;
-	vertical-align: top;
-	text-align: center;
-	border-left: 1px solid #0081c2;
-	border-right: 1px solid #0081c2;
-	background: linear-gradient(#00aaff,#008cd3);
+    width: 12.5%;
+    height: 100%;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    vertical-align: top;
+    text-align: center;
+    border-left: 1px solid #0081c2;
+    border-right: 1px solid #0081c2;
+    background: linear-gradient(#00aaff,#008cd3);
 }
 
 .catalog > li:hover {
-	background: url('../images/catalog-selected.png') no-repeat, linear-gradient(rgba(104,205,255,1) 80%,rgba(41,159,217,1));
-	background-size: contain;
-	cursor: pointer;
+    background: url('../images/catalog-selected.png') no-repeat, linear-gradient(rgba(104,205,255,1) 80%,rgba(41,159,217,1));
+    background-size: contain;
+    cursor: pointer;
 }
 
 .catalog > li > .icon {
-	width: 100%;
-	height: 141px;
-	overflow: hidden;
-	position: relative;
+    width: 100%;
+    height: 141px;
+    overflow: hidden;
+    position: relative;
 }
 
 .catalog > li:hover > .icon {
-	background-position-y: -141px;
+    background-position-y: -141px;
 }
 
 .catalog > li .title {
-	position: absolute;
-	margin-bottom: 10px;
-	bottom: 10px;
-	width: 100%;
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
+    padding: 0 5%;
+    width: 90%;
 }
 
 .catalog > li > .submenu {
-	position: absolute;
-	display: none;
-	top: 100%;
-	left: 0;
-	background: #d7d7d7;
-	padding: 20px 0 10px 0;
-	width: 200%;
-	z-index: 10;
-	-webkit-box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
-	-moz-box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
-	box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background: #d7d7d7;
+    padding: 20px 0 10px 0;
+    width: 200%;
+    z-index: 10;
+    -webkit-box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
+    -moz-box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
+    box-shadow: 1px 1px 11px 0 rgba(50, 50, 50, 0.52);
 }
 
 .catalog > li.last > .submenu {
-	left: -100%;
+    left: -100%;
 }
 
 .catalog > li > .submenu:before {
-	content: "";
-	top: 0;
-	left: 75px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 10px 0 10px;
-	border-color: #8c8c8c transparent transparent transparent;
-	position: absolute;
+    content: "";
+    top: 0;
+    left: 75px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #8c8c8c transparent transparent transparent;
+    position: absolute;
 }
 
 .catalog > li.last > .submenu:before {
-	left: 245px;
+    left: 245px;
 }
 
 .catalog > li:hover > .submenu,
 .catalog > li > .submenu:hover {
-	display: block;
+    display: block;
 }
 
 .catalog > li > .submenu > li {
-	display: flex;
-	float: left;
-	text-align: left;
-	width: 50%;
-	margin: 5px 0;
-	padding: 0 10px;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+    display: flex;
+    float: left;
+    text-align: left;
+    width: 50%;
+    margin: 5px 0;
+    padding: 0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-	.catalog > li > .submenu > li a {
-		text-decoration: none;
-		color: black;
-	}
+    .catalog > li > .submenu > li a {
+        text-decoration: none;
+        color: black;
+    }
 
-	.catalog > li > .submenu > li:hover a {
-		cursor: pointer;
-		color: #0096e1;
-	}
+    .catalog > li > .submenu > li:hover a {
+        cursor: pointer;
+        color: #0096e1;
+    }
 
-	.catalog > li > .submenu > li:before {
-		content: "";
-		background: url('../images/menu-images/arrow.png') 0 0 no-repeat;
-		width: 7px;
-		padding-left: 10px;
-		margin-top: 3px;
-		height: 11px;
-		display: inline-block;
-	}
+    .catalog > li > .submenu > li:before {
+        content: "";
+        background: url('../images/menu-images/arrow.png') 0 0 no-repeat;
+        width: 7px;
+        padding-left: 10px;
+        margin-top: 3px;
+        height: 11px;
+        display: inline-block;
+    }
 
-	.catalog > li > .submenu > li:hover:before {
-		background-position: 0 -15px;
-	}
+    .catalog > li > .submenu > li:hover:before {
+        background-position: 0 -15px;
+    }

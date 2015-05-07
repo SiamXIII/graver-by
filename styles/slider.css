@@ -36,27 +36,27 @@
         background-position: -96px -6px;
     }
 
-#mainSlider .slides > div:hover {
-    cursor: pointer;
+.carousel-wrapper {
+    position: relative;
 }
 
-#mainSlider .caption {
-    padding: 10px 20px;
-    font-size: 20px;
-    background: linear-gradient(160deg,rgba(66,172,226,1) 30%, rgba(255,255,255,0) 60%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 44px;
-}
-
-    #mainSlider .caption a {
-        color: white;
-        text-decoration: none;
-        font-weight: normal;
+    .carousel-wrapper a.prev {
+        position: absolute;
+        display: block;
+        background: url('../images/slider-images/full-left-arrow.png') no-repeat;
+        left: 0;
+        top: 45%;
+        height: 48px;
+        width: 24px;
     }
 
-        #mainSlider .caption a:hover {
-            color: #0093dd;
-        }
+    .carousel-wrapper a.next {
+        position: absolute;
+        display: block;
+        background: url('../images/slider-images/full-right-arrow.png') no-repeat;
+        right: 0;
+        top: 45%;
+        height: 48px;
+        width: 24px;
+        z-index: 20;
+    }
