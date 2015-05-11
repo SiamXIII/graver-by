@@ -1,0 +1,57 @@
+﻿.side-menu {
+    background-color: white;
+    padding: 0;
+    margin: 10px 0;
+    margin-top: 0;
+    list-style-type: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-collapse: collapse;
+    width: 25%;
+}
+
+ul.side-menu ul {
+    list-style-type: none;
+    padding: 0 0 5px 0;
+}
+
+ul.side-menu > li:not(.last) {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+    ul.side-menu > li:not(.last) > a.header.opened {
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+
+ul.side-menu ul li {
+    background: no-repeat url('../images/portfolio/foot_arrow.gif');
+    background-position: 5% 45%;
+    padding-left: 25px;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.side-menu li a.header.closed,
+.side-menu li a.header.opened {
+    background-image: url('../images/portfolio/down.gif');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 96%;
+    padding: 2%;
+}
+
+.side-menu li a.header.opened {
+    background-image: url('../images/portfolio/up.gif');
+}
+
+.side-menu a,
+.side-menu {
+    text-decoration: none;
+    color: #666;
+}
+
+    .side-menu a:hover,
+    .side-menu ul li:hover {
+        color: #0093dd;
+        cursor: pointer;
+    }
