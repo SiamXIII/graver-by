@@ -12,6 +12,10 @@ body {
     background-image: url('../images/background.png');
 }
 
+.wrapper {
+    width: 1700px;
+}
+
 .clearfix:after {
     content: ".";
     clear: both;
@@ -44,8 +48,13 @@ h2 {
 
     h2.centered {
         text-align: center;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
 .overlay-wrapper {
     background: linear-gradient(to bottom, white 60%, transparent);
